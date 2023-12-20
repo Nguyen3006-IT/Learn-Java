@@ -1,0 +1,13 @@
+GIẢI NÉN FILE TXT --> FILE ZIP 
+
+* Nén (Deflater) file:
+- Loại 1: File (nguồn) => FileInputStream (đọc dữ liệu từ file ra) => DeflaterInputStream (nén dữ liệu mỗi lần đọc) => FileOutputStream (Lưu dữ liệu vừa nén vào file mới => File Zip).
+
+- Loại 2: File (nguồn) => FileInputStream (đọc dữ liệu từ file ra) => Dữ liệu này chưa được nén => FileOutputStream (Ghi File) => DeflaterOutputStream (nén dữ liệu) => Lưu File với các dữ liệu đã nén.
+
+
+* Giải nén (Inflater) file:
+- Loại 1: File (zip) => FileInputStream (đọc dữ liệu nén) => inflaterInputStream (giải
+nén lúc đọc dữ liệu) => Dữ liệu text => FileOutputStream (Lưu file dạng .txt)
+
+- Loại 2: File (zip) => FileInputStream (đọc dữ liệu nén) => Dữ liệu nén => inflaterInputStream (giải nén lúc đọc dữ liệu) => FileOutputStream (Lưu file dạng text).
