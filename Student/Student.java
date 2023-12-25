@@ -18,28 +18,7 @@ public class Student implements java.lang.Comparable<Student>, Serializable {
     public Student() {
     }
 
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public void setGpa(float gpa) {
-        this.gpa = gpa;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public Student input() {
-        // Scanner sc = new Scanner(System.in);
         System.out.printf("Enter student name: ");
         this.name = System.console().readLine();
 
