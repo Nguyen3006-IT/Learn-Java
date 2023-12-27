@@ -23,9 +23,6 @@ public class Main {
                 case 2:
                     showGame();
                     break;
-                case 3:
-
-                    break;
 
                 default:
                     System.out.println("nhap sai, hay nhap lại");
@@ -78,9 +75,8 @@ public class Main {
             while (true) {
                 try {
                     obj = objRead.readObject();
-                    System.out.println(obj);
                 } catch (Exception e) {
-                    obj = null;
+                    e.printStackTrace();
                 }
                 if (obj == null)
                     break;
