@@ -40,6 +40,9 @@ public class Thread1 extends Thread {
                 }
             }
         }
+        synchronized (sharedData) {
+            sharedData.notifyAll();
+        }
     }
 
 }

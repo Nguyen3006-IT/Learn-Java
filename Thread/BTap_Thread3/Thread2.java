@@ -13,7 +13,7 @@ public class Thread2 extends Thread {
             synchronized (sharedData) {
                 sharedData.notifyAll();
                 try {
-                    while (sharedData.getIndex() != 2 && sharedData.checkAvaiable()) {
+                    while ((sharedData.getIndex() != 2) && sharedData.checkAvaiable()) {
                         sharedData.wait();
                     }
                 } catch (InterruptedException e) {
@@ -27,6 +27,9 @@ public class Thread2 extends Thread {
                 }
                 sharedData.setIndex(1);
             }
+        }
+        synchronized (sharedData) {
+            sharedData.notifyAll();
         }
     }
 }

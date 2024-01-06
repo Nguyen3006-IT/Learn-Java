@@ -1,6 +1,6 @@
 # Chương Này Học Về Đa Luồng (Thread) 
 ***
-- Có thể hiểu trong một thời điểm có nhiều luồng chạy cùng lúc.
+- Có thể hiểu là trong một thời điểm có nhiều luồng chạy cùng lúc.
 
 ### Một số phương thức quan trọng có sẵn trong lớp Thread của ngôn ngữ Java.
 `public void start()`: Bắt đầu thread trong một path riêng rẽ, sau đó triệu hồi phương thức run() trên đối tượng Thread này. 

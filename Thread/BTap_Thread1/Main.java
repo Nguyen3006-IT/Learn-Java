@@ -7,9 +7,11 @@ public class Main {
         List<WithDrawThread> tList = new ArrayList<>();
 
         MyBank myBank = new MyBank(1000);
-        myBank.withDraw(800, "T1");
-        myBank.withDraw(800, "T2");
-        myBank.withDraw(800, "T3");
+        /*
+         * myBank.withDraw(800, "T1");
+         * myBank.withDraw(800, "T2");
+         * myBank.withDraw(800, "T3");
+         */
 
         for (int i = 0; i < 5; i++) {
             tList.add(new WithDrawThread(myBank, "T" + i));

@@ -1,6 +1,7 @@
 # Giải Thích File Main 
 ***
 ```
+* Tóm tắt:
 T1 = file ThreadRandom.java
 T2 = file ThreadSquare.java
 ```
