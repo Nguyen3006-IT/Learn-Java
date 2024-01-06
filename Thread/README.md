@@ -4,7 +4,6 @@
 
 ### Một số phương thức quan trọng có sẵn trong lớp Thread của ngôn ngữ Java.
 `public void start()`: Bắt đầu thread trong một path riêng rẽ, sau đó triệu hồi phương thức run() trên đối tượng Thread này. 
-=> Daemon thread (luồng daemon) là một loại luồng đặc biệt được thiết kế để chạy trong nền và tự động kết thúc khi tất cả các luồng không daemon đã kết thúc. Điều này có nghĩa là nếu không còn luồng không daemon nào còn sống, thì chương trình sẽ thoát mà không cần chờ đến khi tất cả các daemon thread cũng kết thúc.
 
 `public void run()`: Nếu đối tượng Thread này được khởi tạo bởi sử dụng một đối tượng Runnable, phương thức run() sẽ được triệu hồi.
 
@@ -13,6 +12,7 @@
 `public final void setPriority(int priority)`: Thiết lập quyền ưu tiên của đối tượng Thread này. Giá trị có thể có nằm trong khoảng từ 1 tới 10.
 
 `public final void setDaemon(boolean in)`: Một tham số true chứng tỏ Thread này như là một Daemon thread.
+==> Daemon thread (luồng daemon) là một loại luồng đặc biệt được thiết kế để chạy trong nền và tự động kết thúc khi tất cả các luồng không daemon đã kết thúc. Điều này có nghĩa là nếu không còn luồng không daemon nào còn sống, thì chương trình sẽ thoát mà không cần chờ đến khi tất cả các daemon thread cũng kết thúc.
 
 `public final void join(long millis)`: Thread hiện tại triệu hồi phương thức này trên thread thứ hai, làm cho Thread hiện tại block tới khi thread thứ hai kết thúc hoặc sau một số lượng mili giây đã xác định.
 
