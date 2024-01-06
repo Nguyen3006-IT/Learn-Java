@@ -3,8 +3,8 @@
 ### Đề Bài:
 - Chạy 3 luồng.
 - Sinh các số ngẫu nhiên và thực hiện xem số đó có chia hết cho 3 hay không. Nếu chia hết cho 3 thì đẩy qua luồng 2 và thực hiện bình phương số đó lên. Còn nếu như số đó chia hết cho 2 thì đẩy qua luồng 3 và xem số đó có chia hết cho 4 không.
-
 ***
+
 ### File Main.java:
 - Thực hiện chạy, khỏi tạo các luông...
 
