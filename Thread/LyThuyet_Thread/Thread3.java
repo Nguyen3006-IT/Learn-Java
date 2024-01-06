@@ -1,9 +1,10 @@
-package Thread;
+package LyThuyet_Thread;
 
-public class Thread2 extends Thread {
+public class Thread3 implements Runnable {
     String name;
+    Thread t;
 
-    public Thread2(String name) {
+    public Thread3(String name) {
         this.name = name;
     }
 
@@ -13,5 +14,4 @@ public class Thread2 extends Thread {
             System.out.println(name + " >>> " + i);
         }
     }
-
 }

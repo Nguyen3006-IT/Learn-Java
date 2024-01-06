@@ -1,5 +1,3 @@
-package Thread;
-
 public class MyBank {
     int money;
 

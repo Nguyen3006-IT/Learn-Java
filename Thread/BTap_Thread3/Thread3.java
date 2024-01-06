@@ -1,4 +1,4 @@
-package BTap_Thread;
+package BTap_Thread3;
 
 public class Thread3 extends Thread {
     SharedData sharedData;

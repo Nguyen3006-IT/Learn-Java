@@ -1,4 +1,4 @@
-package Thread;
+package LyThuyet_Thread;
 
 public class Main {
 
@@ -13,6 +13,11 @@ public class Main {
             }
         });
         t1.start();
+
+        // Lambda cách 1
+        new Thread(() -> {
+            System.out.println("T1.2 >> Lambda");
+        }).start();
 
         // cách 2
         Thread2 t2 = new Thread2("- T2");

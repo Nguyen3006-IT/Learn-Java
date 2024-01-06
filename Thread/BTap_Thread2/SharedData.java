@@ -1,5 +1,3 @@
-package Thread;
-
 public class SharedData {
     int rad;
 

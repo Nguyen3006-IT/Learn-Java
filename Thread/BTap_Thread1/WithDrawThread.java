@@ -1,5 +1,3 @@
-package Thread;
-
 public class WithDrawThread extends Thread {
     String name;
     MyBank mybank;

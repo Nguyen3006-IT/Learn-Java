@@ -1,4 +1,4 @@
-package BTap_Thread;
+package BTap_Thread3;
 
 public class SharedData {
     int rad, total, index;

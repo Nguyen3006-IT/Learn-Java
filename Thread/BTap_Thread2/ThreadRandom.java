@@ -1,5 +1,3 @@
-package Thread;
-
 import java.util.Random;
 
 public class ThreadRandom extends Thread {

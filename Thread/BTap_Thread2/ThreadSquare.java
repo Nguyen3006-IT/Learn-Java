@@ -1,5 +1,3 @@
-package Thread;
-
 public class ThreadSquare extends Thread {
     SharedData sharedData;
 
@@ -15,7 +13,6 @@ public class ThreadSquare extends Thread {
                     sharedData.notifyAll();
                     sharedData.wait();
                 } catch (InterruptedException e) {
-                    // TODO Auto-generated catch block
                     e.printStackTrace();
                 }
                 int ran = sharedData.getRad();
