@@ -1,6 +1,6 @@
 package BTap_Thread;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
         SharedData sharedData = new SharedData();
 
